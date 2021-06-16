@@ -136,8 +136,15 @@ H = h + N
 
 现在我们将关注英国地形测量局给不列颠岛制图时使用的大地水准面模型，尽管大多数测量人员可能不会马上想到这一点（Although most surveyors ight not immediately think of it as such)。它就是Ordnance Datum Newlyn (ODN)垂直坐标系统。英国地形测量局使用基于平均海平面的高程来对州进行制图。如果我们想要在测高中使用亚米级(sub-metre)的精度，但是这是一个不明确的表述，因为平均海平面(MSL)随着时间和地点的不同而不同，就像我们在2.3章节中提到。
 
-ODN与由 the tide-gauge at NewlynCornwall在1915和1921年所测得的平均海平面相接近。以这个特殊的平均海平面作为0高程点的高程被叫做ODN高程(ODN heights)。ODN因此是一个在2.3章节中提到的局部大地水准面。ODN高程在 英国本土的所有等高线、sopt height、bench mark heights  中被使用。ODN高程在许多沿海岛屿中不可用，因为他们通过测潮站有自己的平均海平面。
+ODN与由 the tide-gauge at NewlynCornwall在1915和1921年所测得的平均海平面相接近。以这个特殊的平均海平面作为0高程点的高程被叫做ODN高程(ODN heights)。ODN因此是一个在2.3章节中提到的局部大地水准面。ODN高程在 英国本土的所有等高线、sopt height、bench mark heights  中被使用。ODN高程在许多沿海岛屿中不可用，因为他们通过测潮站有自己4的平均海平面。
 
 图6显示了MSL高程对比椭球高。它呈现了ODN高度为在延伸到陆地内部的平均海平面表面的垂直的距离。
 
-那么在陆地下面连续的平均海水面有意味着什么？答案是在图6中以点线形式显示的表面事实上是局部大地水准面模型。小写的'g'表明局部大地水准面模型与全球大地水准面相对。它是在本世纪前半部分使用水准尺技术从Newlyn reference point测量得到的，测得了横跨不列颠的70万个水准点。既然我们已经知道了每个水准点之间的距离，根据ODN局部大地水转面，通过使用GPS测量Ordnace Survey水准点的高程，根据在该点的ODN模型我们可以得到大地水准面和椭球的差值N。
+那么在陆地下面连续的平均海水面有意味着什么？答案是在图6中以点线形式显示的表面事实上是局部大地水准面模型。小写的'g'表明局部大地水准面模型与全球大地水准面相对。它是在本世纪前半部分使用水准测量从Newlyn reference point测量得到的，测得了横跨不列颠的70万个水准点。既然我们已经知道了每个水准点之间的距离，根据ODN局部大地水转面，通过使用GPS测量Ordnace Survey水准点的高程，根据在该点的ODN模型我们可以得到大地水准面和椭球的差值N。
+
+ODN正高已经成为了不列颠的国家标准，并且很可能会继续保持。理解ODN正高与通过现代重力测量得到的高程产生的差异的原因是重要的。这些差异可能达到1m，尽管方程2中的hab很可能只超过几厘米。有三个原因造成这种情况。
+
+首先，ODN模型在测量时假设在Newlyn某个时间、某个地点的平均海平面等同于大地水准面。这是不真实的，真正的大地水准面是全球平均海平面的最佳匹配，不是在特定时间特定地点的平均海平面。平均海平面在大地水准面的各处不同，由于水流、温度、压力和密度的差异。这种现象被称为海洋表面地形（sea surface topolygon, SST）。这种效应只有在需要在超过一个国家的范围内比较不同正高的差异才重要；对于在不列颠内的所有应用来说这是不相关的。ODN参考表面是一个面向不列颠优化的局部大地水准面模型，并且他是最适合在不列颠使用的参考表面。
+
+第二，因为ODN大地水准面模型只是将MSL绑定在一点上，它很可能会遭受到像水准测量那样从一个点进行长距离后的 "slope error"。整个模型有非常轻微的slope error已经被知晓了很久，即它或许相对于真实的大地水准面有偏移。这个误差在1000km的范围内大概能达到不超过20cm的程度。This error might conceivably be important for applications that require very precise relative heights of points over the whole of Britain. For any application restricted to a region 500 km or less in extent, it is very unlikely to be apparent.
+
