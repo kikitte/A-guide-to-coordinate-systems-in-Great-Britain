@@ -148,3 +148,14 @@ ODN正高已经成为了不列颠的国家标准，并且很可能会继续保�
 
 第二，因为ODN大地水准面模型只是将MSL绑定在一点上，它很可能会遭受到像水准测量那样从一个点进行长距离后的 "slope error"。整个模型有非常轻微的slope error已经被知晓了很久，即它或许相对于真实的大地水准面有偏移。这个误差在1000km的范围内大概能达到不超过20cm的程度。This error might conceivably be important for applications that require very precise relative heights of points over the whole of Britain. For any application restricted to a region 500 km or less in extent, it is very unlikely to be apparent.
 
+第三点也是做重要的，当使用水准点来得到ODN高程时可能会混入误差。一些OSBM（ordance survay bench mark）早在1912年就开始被测量，从1970年代以来大多数没有被严格检查。因此我们必须关注由于原始测量限制导致的误差，或者水准点确定以来可能产生的移动。偶尔有轶事证据表明，在采矿导致地面塌陷的地方，基准点下沉误差达数米。这些类型的误差甚至可以影响局部高程测量，并且单个的水准点不应当在高精度工作中被信任。然而，ODN现在可以在无水准点参照的情况下被完全使用，使用OS Net通过精确的GPS测量。（省略一些不列颠的东西）。
+
+### 3.1.5    Easting and northings
+
+最后一中我们需要考虑的坐标类型是easting and nrothing，又称平面坐标(plane coordinate)、格网坐标(grid coordinate)、地图坐标(map coordinate)。这些坐标被用来相对地图确定位置，其使用二维平面表现地球曲面上的要素。到目前为止，"地图"已经变为计算机化的地里信息系统，但是基本的原则还是几乎相同。地图坐标使用简单的2D笛卡尔系统，他的两个坐标轴被称为eastings and nrothings。地图坐标是一个点使用了被叫做地图投影的标准公式从其椭球上的經度和纬度计算得来。这是与Ordnance Survey National Grid最经常相关的坐标类型。
+
+地图投影不是一种完美的表达手法，因为在平面地图上现实曲面不可避免的产生拉伸形变和不连续(distortings and discontinuities)。因此，不同的地图投影被在不同的应用中被使用。在不列颠通常使用Ordnance Survey National Grid Projection和Universal Tranverse Mecator projection（UTM）。这些都是横轴墨卡托类型的投影。任何使用eastings and northings表示的坐标都应该伴随被用来创建他们的地图投影的精确描述。
+
+在大地测量学中，地图坐标倾向于只用来做可视化表达的意图。当我们需要使用坐标进行计算的时候，我们会使用经纬度或者笛卡尔坐标系，随后如果需要的话将结果转换为地图坐标。这个工作流程与地理信息系统的相对，他们（GIS）会直接使用地图坐标进行许多计算任务。
+
+### 3.2 我们需要基准面
